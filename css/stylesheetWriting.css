@@ -1,0 +1,139 @@
+
+
+#imageContainer {
+	display: none;
+}
+
+#desktopWriting {
+	display: none;
+}
+
+#listOfPublications {
+	display: block;
+}
+
+.publication {
+	color: #000000;
+	font-size: 3.5vw;
+	text-decoration: underline;
+}
+
+.piece {
+	font-size: 3vw;
+	margin: 1%;
+}
+
+.writingList {
+	margin-bottom: 4%;
+	margin-top: 4%;
+}
+
+#onlineWritingDisclaimer {
+	font-size: 2.5vw;
+}
+
+li a:hover {
+	color: #9d0208;
+}
+
+
+@media screen and (min-width: 780px) {
+
+	#writingContainer {
+		float: left;
+		width: 45%;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	article {
+		width: 90%;
+	}
+
+	#imageContainer {
+		display: inline-block;
+		float: left;
+		width: 55%;
+	}
+
+	#imageContainer img{
+		display: inline-block;
+		width: 100%;
+		transition: opacity 1s ease;
+	}
+
+	.bookImages {
+		position: relative;
+		display: inline-block;
+		margin: 2%;
+		width: 25%;
+	}
+
+	#mobileWriting, #listOfPublications, #onlineWritingDisclaimer {
+		display: none;
+	}	
+
+	#desktopWriting {
+		display: block;
+	}
+
+	#desktopWriting a {
+		color: #000000;
+		text-decoration: underline;
+	}
+
+	.publication {
+		color: #000000;
+		font-size: 2vw;
+		text-decoration: underline;
+	}
+
+	.piece {
+		font-size: 1.5vw;
+		margin: 1%;
+	}
+
+	.writingList {
+		margin-bottom: 4%;
+		margin-top: 4%;
+	}
+
+	#onlineWritingDisclaimer {
+		font-size: 1vw;
+	}
+
+	li a:hover, #desktopWriting a:hover {
+		color: #9d0208;
+	}
+
+	.sneakPeek {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		font-size: 1.5vw;
+		padding: 4%;
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+
+	.sneakPeek span {
+		font-style: italic;
+		font-size: 1.5vw;
+		font-weight: bold;
+	}
+
+	.bookImages:hover .sneakPeek {
+		opacity: 1;
+	}
+
+	.bookImages:hover img{
+		opacity: .1;
+	}
+
+	.bookImages a {
+		color: #000000;
+	}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jenni Hinck - Web Design</title>
+	<link rel="stylesheet" type="text/css" href="css/browserreset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+	<!-- preload images -->
+	<link rel="preload" href="images/globe.jpg" as="image">
+</head>
+<body onresize="menuCheck()">
+	<header>
+		<h1><a href="index.html">Jenni Hinck</a></h1>
+		<a href="javascript:void(0);" id="menuIcon" onclick="dropdownMenu()" aria-label="Menu"><i class="fas fa-bars"></i></a>
+		<nav id="navMenu">
+			<a href="aboutMe.html">About</a>
+			<a href="writing.html">Writing</a>
+			<a href="webDesign.html">Web Design</a>
+			<a href="baking.html">Baking</a>
+		</nav>
+	</header>
+	<section>
+		<h2>Web Design</h2>
+		<img src="images/globe.jpg" alt="Globe Theatre">
+	</section>
+	<article>
+		<p>Jenni is a fledgling web designer with a focus on responsive, mobile-first design. She currently works with HTML5, CSS3, and Javascript. If you are interested in getting a website designed, you can find her on UpWork.</p>
+	</article>
+	<aside>
+		<h2>Contact Me</h2>
+		<a href="mailto:jennihinck@gmail.com?subject=Inquiry" aria-label="Email" target="_blank"><i class="far fa-envelope"></i></a>
+		<a href="https://www.linkedin.com/in/jenni-hinck/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+		<a href="https://www.upwork.com/freelancers/~01eeb9c2c8c7778eb7" aria-label="UpWork" target="_blank" ><i class="fab fa-linkedin" style="visibility: hidden;"><div id="upWorkBackground"></div></i></a>
+		<a href="https://twitter.com/jenninthebets" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+	</aside>
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>&nbsp;|&nbsp;
+			<a href="aboutMe.html">About</a>&nbsp;|&nbsp;
+			<a href="writing.html">Writing</a>&nbsp;|&nbsp;
+			<a href="webDesign.html">Web Design</a>&nbsp;|&nbsp;
+			<a href="baking.html">Baking</a>
+		</nav>
+		<div>&copy;2020 Jenni Hinck all rights reserved</div> </footer>
+</body>
+</html>
