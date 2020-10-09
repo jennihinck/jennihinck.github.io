@@ -9,7 +9,7 @@
 	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
 	<script src="js/slideScript.js"></script>
 	<!-- preload images -->
-	<link rel="preload" href="images/ireland.jpg" as="image">
+	<link rel="preload" href="images/headers/ireland.jpg" as="image">
 	<link rel="preload" href="images/rockerHeadshot.jpg" as="image">
 	<link rel="preload" href="images/eagleAndChild.jpg" as="image">
 	<link rel="preload" href="images/globe.jpg" as="image">
@@ -22,7 +22,7 @@
 				<h1><a href="aboutMe.html">Jenni Hinck</a></h1>
 				<a href="writing.html">Writer.&nbsp;</a><a href="webDesign.html">Web Designer.&nbsp;</a><a href="baking.html">Baker.</a>
 			</nav>
-			<img src="images/headers/ireland.jpg" id="slideBackground" alt="">
+			<img src="images/headers/ireland.jpg" id="slideBackground" alt="Irish Landscape">
 			<!-- images for slideshow -->
 			<img src="images/headers/ireland.jpg" class="mySlides" id="slide-1" alt="Irish Landscape">
 			<img src="images/headers/iceland1.jpg" class="mySlides" id="slide-2" alt="Reykjavik">
@@ -34,11 +34,11 @@
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			<!-- dots for image count -->
 			<div class="dotContainer">
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
+				<span class="dot" id="slide-1-dot" onclick="skimSlides(0)"></span>
+				<span class="dot" id="slide-2-dot" onclick="skimSlides(1)"></span>
+				<span class="dot" id="slide-3-dot" onclick="skimSlides(2)"></span>
+				<span class="dot" id="slide-4-dot" onclick="skimSlides(3)"></span>
+				<span class="dot" id="slide-5-dot" onclick="skimSlides(4)"></span>
 			</div>
 		</div>
 	</header>
