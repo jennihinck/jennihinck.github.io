@@ -1,19 +1,81 @@
 body {
 	margin: 0;
-	font-family: "Courier New", Courier, Baskerville, serif;
-	background-color:  #d6d5c9d9;
+	font-family: "Book Antiqua", serif;
+	background-color:  #000000;
 	text-align: center;
 	position: relative;
+	background-image: url("../images/mainBackground.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+	background-attachment: fixed;
 }
+
+/*HEADER START*/
+header {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+#headerBackgroundDesktop {
+	display: block;
+	width: 100%;
+}
+
+#arrowLogo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2%;
+	width: 30%;
+}
+
+#navMenu {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 60%;
+	z-index: 9;
+	text-align: center;
+	background-color: #000000;
+	transform: translateY(-50%);
+	background-color: transparent;
+}
+
+#navMenu a {
+	display: inline-block;
+	color: #d6d5c9d9;
+	text-decoration: none;
+	padding: 0% 2%;
+	margin: 1%;
+	font-family: "Book Antiqua", serif;
+	font-size: 2vw;
+	text-shadow: -.5px .5px 0 #000000, .5px .5px 0 #000000, .5px -.5px 0 #000000, -.5px -.5px 0 #000000;
+	transition: all 1s;
+}
+
+#navMenu a:hover {
+	font-size: 2.5vw;
+	color: #FFFFFF;
+	border-bottom: 1px solid;
+}
+
+/*HEADER END*/
+
+/*#arrowLogoSlide {
+	width: 50%;
+}*/
 
 /*SLIDESHOW START*/
 .slideshow-container {
 	position: relative;
+	margin-top: 10%;
 	overflow: hidden;
 }
 
 /*Slides/sliding animation*/
-header img {
+.slideshow-container img {
 	width: 100%;
 	height: 100%;
 }
@@ -61,7 +123,7 @@ header img {
 	left: 0;
 	margin: 0 1%;
 	padding: 2%;
-	color: #d6d5c9d9;
+	color: #b9b9b9;
 	font-weight: bold;
 	font-size: 4vw;
 	transition: 0.6s ease;
@@ -94,7 +156,7 @@ header img {
 	height: 2vw;
 	width: 2vw;
 	padding: 3%;
-	background-color: #d6d5c9d9;
+	background-color: #b9b9b9;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
@@ -128,12 +190,12 @@ header img {
 
 #slideText a {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #b9b9b9;
 	transition: color 1s;
 }
 
 #slideText a:hover {
-	color: #909090;
+	color: #FFFFFF;
 }
 /*SLIDESHOWEND*/
 
@@ -159,7 +221,7 @@ section h2 {
 
 section:hover {
 	font-size: 9vw;
-	color: #FFFFFF;
+	color: #b9b9b9;
 	text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
 	font-weight: normal;
 }
@@ -167,7 +229,7 @@ section:hover {
 section img {
 	width: 100%;
 	display: block;
-	opacity: .6;
+	opacity: 1;
 	transition: opacity 1.5s ease;
 }
 
@@ -176,20 +238,27 @@ section:hover img {
 }
 /*SECTIONS END*/
 
-/*ASIDE START*/
-aside h2 {
-	font-size: 4vw;
-	margin: 2%;
+/*FOOTER START*/
+footer {
+	position: relative;
+	background-image: url("../images/footerBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 4% 0 0 0;
 }
 
-aside a {
-	position: relative;
+#footerSocial {
+	width: 100%;
+	padding: 2% 0;
+	margin: 2% 0;
+}
+
+#footerSocial a {
 	display: inline-block;
-	width: 6vw;
-	height: 6vw;
-	margin: 0 2%;
-	font-size: 6vw;
+	margin: 0% 5%;
+	font-size: 8vw;
 	transition: all 1s ease;
+	opacity: .7;
 }
 
 .fa-twitter {
@@ -204,50 +273,45 @@ aside a {
 	color: #D44638;
 }
 
-#upWorkBackground {
-	width: 6vw;
-	height: 6vw;
+.upWorkBackground {
+	width: 7vw;
+	height: 7vw;
 	visibility: visible;
 	background-color: #32cd32;
-	background-image: url("../images/upWorkLogo.png");
+	background-image: url("../images/upWorkWhite.png");
 	background-size: contain;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	border-radius: 5%;
 	transition: all 1s ease;
 }
 
-aside a:hover {
-	width: 10vw;
-	height: 10vw;
+#footerSocial a:hover {
 	font-size: 10vw;
 }
 
-#upWorkBackground:hover {
+.upWorkBackground:hover {
 	width: 10vw;
 	height: 10vw;
 }
-/*ASIDE END*/
 
-
-/*FOOTER START*/
-footer {
-	margin: 4% 0 2% 0;
-	font-size: 1.5vw;
+footer nav {
+	margin: 2% 0;
+	padding: 2% 0;
 }
 
 footer nav a {
+	font-size: 3.5vw;
 	text-decoration: none;
-	color: #000000;
+	color: #b9b9b9;
 }
 
 footer nav a:hover {
 	text-decoration: underline;
 }
 
-footer div {
-	margin-top: 1%;
+#copyright {
+	font-size: 3vw;
+	color: #b9b9b9;
+	padding: 2% 0;
 }
 /*FOOTER END*/
 
@@ -257,6 +321,7 @@ footer div {
 
 	section {
 		width: 45%;
+		margin: 2%;
 		display: inline-block;
 		font-size: 4vw;
 	}
@@ -265,20 +330,44 @@ footer div {
 		font-size: 5vw;
 	}
 
-	aside h2 {
-		font-size: 2vw;
+	/*FOOTER START*/
+	#footerSocial {
+		margin: 1% 0;
+		padding: 2% 0% 1% 0%;
 	}
 
-	aside a, #upWorkBackground {
-		width: 4vw;
-		height: 4vw;
+	#footerSocial a {
+		font-size: 3vw;
+		margin: 0 3%;
+	}
+
+	.upWorkBackground {
+		width: 2.5vw;
+		height: 2.5vw;
+	}
+
+	#footerSocial a:hover {
 		font-size: 4vw;
 	}
 
-	aside a:hover, #upWorkBackground:hover {
-		width: 5vw;
-		height: 5vw;
-		font-size: 5vw;
+	.upWorkBackground:hover {
+		width: 3.5vw;
+		height: 3.5vw;
 	}
+
+	footer nav {
+		margin: 0;
+		padding: 0;
+	}
+
+	footer nav a {
+		font-size: 1.75vw;
+	}
+
+	#copyright {
+		font-size: 1.25vw;
+		padding: 2% 0 1% 0;
+	}
+	/*FOOTER END*/
 }
 /*DESKTOP VIEW END*/

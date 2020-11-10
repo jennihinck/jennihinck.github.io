@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fiona McTaggart</title>
+	<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/BrowserReset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div id="mainContainer">
+		<div id="headerContainer">
+			<img src="images/headerBackgroundMobileblur.jpg" alt="mountains" id="headerBackgroundMobile">
+			<img src="images/headerBackgroundDesktopblur.jpg" alt="mountains" id="headerBackgroundDesktop">
+			<header>
+				<h1><a href="index.html">Fiona<br>McTaggart</a></h1>
+				<a href="javascript:void(0);" id="menuIcon" onclick="dropdownMenu()" aria-label="Menu"><i class="fas fa-bars"></i></a>
+				<nav id="navMenu">
+					<section>
+						<h2><a href="aboutMe.html">About</a></h2>
+					</section>	
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="writingProjects.html">Writing Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="writingProjects.html#otherChildren">The Other Children</a></li>
+							<li class="subMenu"><a href="writingProjects.html#pricking">The Pricking &amp; The Rose</a></li>
+						</ul>	
+					</section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="otherWriting.html">Other Writing</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="otherWriting.html#muggleNet">MuggleNet</a></li>
+							<li class="subMenu"><a href="otherWriting.html#bookReviews">Book Reviews</a></li>
+						</ul>
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="otherProjects.html">Other Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu activeSub"><a href="otherProjects.html#sourdoughnuts">Sourdoughnuts</a></li>
+							<li class="subMenu activeSub"><a href="otherProjects.html#mountainRangeRepro">Mountain Range Repro</a></li>	
+							<li class="subMenu activeSub"><a href="otherProjects.html#sweeties">The Sweeties</a></li>
+						</ul>
+					</section>
+				</nav>
+				<div id="socialLinks">
+					<a href="https://twitter.com/FionaLMcTaggart" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/fiona.mctaggart/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+			</header>
+		</div>
+		<section class="articleSection" id="sourdoughnuts">
+			<article>
+				<h2>Sourdoughnuts</h2>
+				<p>The Yukon's Gourmet Pop Up Doughnut Shop! Founded in 2017 by Sarah Hamilton and Fiona McTaggart, Sourdoughnuts is an artisan pop up doughnut shop located in Whitehorse, Yukon. We specialize in combination sourdough yeast doughnuts and offer new delicious flavours every pop up. Check out our <a href="https://www.sourdoughnuts.ca/" target="_blank" class="sourdoughnutsLink">website</a>!</p>
+				<div class="otherSocialLinks">
+					<a href="https://www.facebook.com/sourdoughnuts" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/sourdoughnuts/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+			</article>
+			<img src="images/sourdoughnuts.jpg" class="sectionPic" alt="doughnuts" style="width: 35%">
+		</section>
+		<section class="articleSection" id="mountainRangeRepro">
+			<article>
+				<h2>Mountain Range Repro</h2>
+				<p>Handmade, one-of-kind authentic vintage reproduction! Check it out on <a href="https://www.etsy.com/shop/mountainrangerepro" target="_blank" class="etsyLink">Etsy</a>.</p>
+				<div class="otherSocialLinks">
+					<a href="https://www.instagram.com/mountain_range_repro/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+			</article>
+			<img src="images/mountainRangeRepro.jpg" class="sectionPic" alt="Mountain Range Repro logo" style="width: 35%">
+		</section>
+		<section class="articleSection" id="sweeties">
+			<article>
+				<h2>The Sweeties</h2>
+				<p>The Sweeties band is made up of a pair of real-life sweeties – Patrick Hamilton and Fiona McTaggart, who live together in Whitehorse, Yukon. Though The Sweeties is a relatively new creation for the two, Patrick and Fiona have been playing music together since they met, more than ten years ago. Together their joint love for traditional old time and bluegrass music, coupled with an insatiable desire for good rock and roll, comes together in The Sweeties like the perfect storm. Check out our <a href="https://www.bigboatrecords.com/the-sweeties-1" target="_blank" class="sweetiesLink">website</a> for more info!</p>
+				<div class="otherSocialLinks">
+					<a href="https://www.facebook.com/TheSweetiesMusic/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/the_sweeties_band/?hl=en" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://open.spotify.com/artist/2WxvZTBfl5vojLlj05sGmm" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a>
+				</div>
+			</article>
+			<img src="images/sweeties.jpg" class="sectionPic" alt="The Sweeties" style="width: 35%">
+		</section>
+	</div>	
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>&nbsp;|&nbsp;<a href="aboutMe.html">About</a>&nbsp;|&nbsp;<a href="writingProjects.html">Writing Projects</a>&nbsp;|&nbsp;<a href="otherWriting.html">Other Writing</a>&nbsp;|&nbsp;<a href="otherProjects.html">Other Projects</a>
+		</nav>
+		<div>
+			<span>&copy; 2020 Fiona McTaggart, All Rights Reserved</span>
+			<span><a href="https://jennihinck.com/" target="_blank">Website designed by Jenni Hinck</a></span>
+		</div> 
+	</footer>
+</body>
+</html>

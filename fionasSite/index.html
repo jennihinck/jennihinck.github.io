@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fiona McTaggart</title>
+	<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/BrowserReset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheetLanding.css"/>
+	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body onresize="menuCheck()">
+	<div id="mainContainer">
+		<div id="headerContainer">
+			<img src="images/headerBackgroundMobileblur.jpg" alt="mountains" id="headerBackgroundMobile">
+			<img src="images/headerBackgroundDesktopblur.jpg" alt="mountains" id="headerBackgroundDesktop">
+			<header>
+				<h1><a href="index.html">Fiona<br>McTaggart</a></h1>
+				<a href="javascript:void(0);" id="menuIcon" onclick="dropdownMenu()" aria-label="Menu"><i class="fas fa-bars"></i></a>
+				<nav id="navMenu">
+					<section>
+						<h2><a href="aboutMe.html">About</a></h2>
+					</section>	
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2 class="menuHeader"><a href="writingProjects.html">Writing Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="writingProjects.html#otherChildren">The Other Children</a></li>
+							<li class="subMenu"><a href="writingProjects.html#pricking">The Pricking &amp; The Rose</a></li>
+						</ul>	
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2 class="menuHeader"><a href="otherWriting.html">Other Writing</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="otherWriting.html#muggleNet">MuggleNet</a></li>
+							<li class="subMenu"><a href="otherWriting.html#bookReviews">Book Reviews</a></li>
+						</ul>
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2 class="menuHeader"><a href="otherProjects.html">Other Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="otherProjects.html#sourdoughnuts">Sourdoughnuts</a></li>
+							<li class="subMenu"><a href="otherProjects.html#mountainRangeRepro">Mountain Range Repro</a></li>	
+							<li class="subMenu"><a href="otherProjects.html#sweeties">The Sweeties</a></li>
+						</ul>
+					</section>
+				</nav>
+				<div id="socialLinks">
+					<a href="https://twitter.com/FionaLMcTaggart" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/fiona.mctaggart/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+			</header>
+		</div>
+		<section class="articleSection">
+			<img src="images/aboutBackground.jpg" alt="">
+			<article>
+				<a href="aboutMe.html"><h2>About</h2></a>
+			</article>
+		</section>
+		<section class="articleSection">
+			<img src="images/writingBackground.jpg" alt="">
+			<article class="articleWithSubMenu">
+				<a href="writingProjects.html"><h2>Writing Projects</h2></a>
+				<ul class="articleMenu">
+					<li class="articleSubMenu"><a href="writingProjects.html#otherChildren">The Other Children</a></li>
+					<li class="articleSubMenu"><a href="writingProjects.html#pricking">The Pricking &amp; The Rose</a></li>
+				</ul>
+			</article>
+		</section>	
+		<section class="articleSection">
+			<img src="images/otherWritingBackground.jpg" alt="">
+			<article class="articleWithSubMenu">
+				<a href="otherWriting.html"><h2>Other Writing</h2></a>
+				<ul class="articleMenu">
+					<li class="articleSubMenu"><a href="otherWriting.html#muggleNet">MuggleNet</a></li>
+					<li class="articleSubMenu"><a href="otherWriting.html#bookReviews">Book Reviews</a></li>
+				</ul>
+			</article>
+		</section>
+		<section class="articleSection">
+			<img src="images/otherProjectsBackground.jpg" alt="">
+			<article class="articleWithSubMenu">
+				<a href="otherProjects.html"><h2>Other Projects</h2></a>
+				<ul class="articleMenu">
+					<li class="articleSubMenu"><a href="otherProjects.html#sourdoughnuts">Sourdoughnuts</a></li>
+					<li class="articleSubMenu"><a href="otherProjects.html#mountainRangeRepro">Mountain Range Repro</a></li>	
+					<li class="articleSubMenu"><a href="otherProjects.html#sweeties">The Sweeties</a></li>
+				</ul>
+			</article>
+		</section>			
+	</div>	
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>&nbsp;|&nbsp;<a href="aboutMe.html">About</a>&nbsp;|&nbsp;<a href="writingProjects.html">Writing Projects</a>&nbsp;|&nbsp;<a href="otherWriting.html">Other Writing</a>&nbsp;|&nbsp;<a href="otherProjects.html">Other Projects</a>
+		</nav>
+		<div>
+			<span>&copy; 2020 Fiona McTaggart, All Rights Reserved</span>
+			<span><a href="https://jennihinck.com/" target="_blank">Website designed by Jenni Hinck</a></span>
+		</div> 
+	</footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fiona McTaggart</title>
+	<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/BrowserReset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div id="mainContainer">
+		<div id="headerContainer">
+			<img src="images/headerBackgroundMobileblur.jpg" alt="mountains" id="headerBackgroundMobile">
+			<img src="images/headerBackgroundDesktopblur.jpg" alt="mountains" id="headerBackgroundDesktop">
+			<header>
+				<h1><a href="index.html">Fiona<br>McTaggart</a></h1>
+				<a href="javascript:void(0);" id="menuIcon" onclick="dropdownMenu()" aria-label="Menu"><i class="fas fa-bars"></i></a>
+				<nav id="navMenu">
+					<section>
+						<h2><a href="aboutMe.html">About</a></h2>
+					</section>	
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="writingProjects.html">Writing Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="writingProjects.html#otherChildren">The Other Children</a></li>
+							<li class="subMenu"><a href="writingProjects.html#pricking">The Pricking &amp; The Rose</a></li>
+						</ul>	
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="otherWriting.html">Other Writing</a></h2>
+						<ul class="menu">
+							<li class="subMenu activeSub"><a href="otherWriting.html#muggleNet">MuggleNet</a></li>
+							<li class="subMenu activeSub"><a href="otherWriting.html#bookReviews">Book Reviews</a></li>
+						</ul>
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="otherProjects.html">Other Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="otherProjects.html#sourdoughnuts">Sourdoughnuts</a></li>
+							<li class="subMenu"><a href="otherProjects.html#mountainRangeRepro">Mountain Range Repro</a></li>	
+							<li class="subMenu"><a href="otherProjects.html#sweeties">The Sweeties</a></li>
+						</ul>
+					</section>
+				</nav>
+				<div id="socialLinks">
+					<a href="https://twitter.com/FionaLMcTaggart" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/fiona.mctaggart/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+			</header>
+		</div>
+		<section class="articleSection" id="muggleNet">
+			<article>
+				<h2>MuggleNet</h2>
+				<p>
+					<ul class="writingLinks">
+						<li>
+							<i class="fas fa-bolt"></i>&nbsp;
+							<a href="https://www.mugglenet.com/author/fionam/" target="_blank">MuggleNet Author Page</a>
+						</li>
+						<li>
+							<i class="fas fa-bolt"></i>&nbsp;
+							<a href="https://www.mugglenet.com/2020/06/perusing-potter-an-ode-to-commercial-fiction/" target="_blank">Perusing “Potter” – An Ode to Commercial Fiction</a>
+						</li>
+						<li>
+							<i class="fas fa-bolt"></i>&nbsp;
+							<a href="https://www.mugglenet.com/2020/02/we-didnt-need-the-americanized-versions-of-the-harry-potter-books/ " target="_blank">We Didn’t Need the Americanized Versions of the “Harry Potter” Books</a>
+						</li>
+					</ul>
+				</p>
+			</article>
+			<img src="images/muggleNet.png" class="sectionPic" alt="MuggleNet logo" style="width: 35%">
+		</section>
+		<section class="articleSection" id="bookReviews">
+			<article>
+				<h2>Book Reviews</h2>
+				<p>
+					<ul class="writingLinks">
+						<li>
+							<i class="fas fa-book-open"></i>&nbsp;
+							<a href="https://blog.mugglenet.com/2020/06/book-review-with-the-fire-on-high-by-elizabeth-acevedo/" target="_blank">With the Fire on High by Elizabeth Acevedo</a>
+						</li>
+						<li>
+							<i class="fas fa-book-open"></i>&nbsp;
+							<a href="https://blog.mugglenet.com/2020/05/book-review-the-archer-at-dawn-the-tiger-at-midnight-2-by-swati-teerdhala/" target="_blank">The Archer at Dawn by Swati Teerdhala</a>
+						</li>
+						<li>
+							<i class="fas fa-book-open"></i>&nbsp;
+							<a href="https://blog.mugglenet.com/2020/05/book-review-the-mermaid-the-witch-and-the-sea-by-maggie-tokuda-hall/" target="_blank">The Mermaid, the Witch, and the Sea by Maggie Tokuda-Hall</a>
+						</li>
+					</ul>
+				</p>
+			</article>
+			<img src="images/bookReview.jpg" class="sectionPic" alt="Open book with pages folded into a heart" style="width: 35%">
+		</section>
+	</div>	
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>&nbsp;|&nbsp;<a href="aboutMe.html">About</a>&nbsp;|&nbsp;<a href="writingProjects.html">Writing Projects</a>&nbsp;|&nbsp;<a href="otherWriting.html">Other Writing</a>&nbsp;|&nbsp;<a href="otherProjects.html">Other Projects</a>
+		</nav>
+		<div>
+			<span>&copy; 2020 Fiona McTaggart, All Rights Reserved</span>
+			<span><a href="https://jennihinck.com/" target="_blank">Website designed by Jenni Hinck</a></span>
+		</div> 
+	</footer>
+</body>
+</html>

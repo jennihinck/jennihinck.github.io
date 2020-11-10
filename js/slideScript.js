@@ -2,7 +2,7 @@
 var slideIndex = 1;
 var slides = document.getElementsByClassName("mySlides");
 var dots = document.getElementsByClassName("dot");
-var autoSlides = setInterval(movingSlides, 4000); 
+var autoSlides = setInterval(movingSlides, 6000); 
 
 
 function plusSlides(n) {

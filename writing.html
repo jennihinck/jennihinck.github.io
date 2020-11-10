@@ -4,135 +4,156 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jenni Hinck - Writing</title>
+	<meta name="description" content="Official website of Jenni Hinck - writing portfolio">
 	<link rel="stylesheet" type="text/css" href="css/browserreset.css">
-	
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="css/stylesheetWriting.css">
 	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
-	<script src="js/writingScript.js"></script>
+	<script src="js/scripts.js"></script>
 	<!-- preload images -->
+	<link rel="preload" href="images/headerBackgroundMobile.jpg" as="image">
+	<link rel="preload" href="images/headerBackgroundDesktop.jpg" as="image">
+	<link rel="preload" href="images/arrowLogo.png" as="image">
 	<link rel="preload" href="images/eagleAndChild.jpg" as="image">
-	<link rel="preload" href="images/writing/book1.png" as="image">
-	<link rel="preload" href="images/writing/book2.png" as="image">
-	<link rel="preload" href="images/writing/book3.png" as="image">
-	<link rel="preload" href="images/writing/book4.png" as="image">
-	<link rel="preload" href="images/writing/book5.png" as="image">
 </head>
 <body onresize="menuCheck()">
 	<header>
-		<h1><a href="index.html">Jenni Hinck</a></h1>
+		<img src="images/headerBackgroundDesktop.jpg" id="headerBackgroundDesktop" alt="">
+		<img src="images/headerBackgroundMobile.jpg" id="headerBackgroundMobile" alt="">
+		<a href="index.html"><img src="images/arrowLogo.png" id="arrowLogo" alt="Jenni Hinck"></a>
 		<a href="javascript:void(0);" id="menuIcon" onclick="dropdownMenu()" aria-label="Menu"><i class="fas fa-bars"></i></a>
 		<nav id="navMenu">
 			<a href="aboutMe.html">About</a>
-			<a href="writing.html">Writing</a>
+			<a href="writing.html" class="active">Writing</a>
 			<a href="webDesign.html">Web Design</a>
-			<a href="baking.html">Baking</a>
+			<a href="otherThings.html">Other Things</a>
 		</nav>
 	</header>
-	<div id="writingContainer">
-		<section>
-			<h2>Writing</h2>
-			<img src="images/eagleAndChild.jpg" alt="Exterior of The Eagle and Child pub in Oxford">
-		</section>
+	<section>
 		<article>
+			<h2 class="articleHeader">Writing</h2>
 			<p>Jenni is a jack-of-all-trades writer, though she focuses primarily on fiction. She has had several short stories and poems published, and was the winner of the 2012 New Play Festival at Concordia University Chicago for her ten-minute play: The Haberdashery of Thaddeus Pellegrin.</p>
-			<br>
-			<p>
-				<div id="mobileWriting">You can find her writing here: </div>
-				<div id="desktopWriting" onclick="publicationList()"><a href="javascript:void(0);">Full list of publications</a></div>
-				<ul id="listOfPublications">
-					<li class="writingList">
-						<a href="https://bit.ly/2Swnej9" target="_blank" class="publication">America's Emerging Literary Fiction Writers: Minnesota and Wisconsin (2019)</a>
-						<ul>
-							<li class="piece">~ Three Forty-Three PM (short story)</li>
-						</ul>
-					</li>
-					<li class="writingList">
-						<a href="https://bit.ly/30AWSRi" target="_blank" class="publication">America's Emerging Suspense Writers: Midwest Region (2019)</a>
-						<ul>
-							<li class="piece">~ Expiration Date (short story)</li>
-						</ul>
-					</li>
-					<li class="writingList">
-						<a href="https://bit.ly/3eQucbs" target="_blank" class="publication">Minnesota's Best Emerging Poets 2019: An Anthology</a>
-						<ul>
-							<li class="piece">~ Nightmare (poem)</li>
-						</ul>
-					</li>
-					<li class="writingList">
-						<a href="https://bit.ly/2Gnhd5T" target="_blank" class="publication">Minnesota's Emerging Writers: An Anthology of Fiction (2018)</a>
-						<ul>
-							<li class="piece">~ The Icarus Problem (short story)</li>
-						</ul>
-					</li>
-					<li class="writingList">
-						<div class="publication">Motif: The Creative Arts Journal of Concordia University Chicago</div>
-						<ul>
-							<li>
-								&nbsp;<span class="publication">Volume 34 (2012)</span>*
-								<ul>
-									<li class="piece">~ The Mirror (poem)</li>
-									<li class="piece">~ Countdown (short story)</li>
-								</ul>
-							</li>
-							<li>
-								&nbsp;<a href="https://bit.ly/2OLSA3f" target="_blank" class="publication">Volume 35 (2013)</a>&nbsp;
-								<ul>
-									<li class="piece">~ Passing By (poem)</li>
-									<li class="piece">~ Three Forty-Three PM (short story)</li>
-								</ul>
-							</li>
-							<li>
-								&nbsp;<span class="publication">Volume 36 (2014)</span>*
-								<ul>
-									<li class="piece">~ Saturday's at Grandma's (poem)</li>
-									<li class="piece">~ The Removal of Wisdom Teeth (poem)</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<span id="onlineWritingDisclaimer">*Unavailable online</span>
-			</p>
 		</article>
-	</div>	
-	<div id="imageContainer">
-		<div class="bookImages">
-			<a href="https://bit.ly/2Swnej9" target="_blank"><img src="images/writing/book1.png" alt="America’s Emerging Literary Fiction Writers: Minnesota and Wisconsin">
-			<div class="sneakPeek"><span>Three Forty-Three PM</span><br><br>The bird was always there.</div></a>
+		<div class="imageContainer">
+			<h2 class="imageHeader">Writing</h2>
+			<img src="images/eagleAndChild.jpg" alt="Exterior of The Eagle and Child pub in Oxford"><i class="fas fa-info-circle" onmouseover="photoBox(this,'in')" onmouseout="photoBox(this,'out')" ontouchstart="photoBox(this,'in')" ontouchend="photoBox(this,'out')"></i>
+			<p class="photoInfo">The Eagle &amp; Child pub in Oxford, England where the Inklings (including C.S. Lewis and J.R.R. Tolkien) would meet and work on their writing.</p>
 		</div>
-		<div class="bookImages">
-			<a href="https://bit.ly/30AWSRi" target="_blank"><img src="images/writing/book2.png" alt="America's Emerging Suspense Writers: Midwest Region">
-			<div class="sneakPeek"><span>Expiration Date</span><br><br>The worst thing that can happen to an assassin is when the wrong man suddenly falls into his soup.</div></a>
+	</section>
+	<section class="bookSection">
+		<article class="bookArticle">
+			<h2 class="articleHeader">Three Forty-Three PM</h2>
+			<p>Short Story</p>
+			<p>A man, a bird, a dilemma.</p>
+			<p>Find it at <a href="https://bit.ly/2Swnej9" target="_blank">Z Publishing</a>.</p>
+		</article>
+		<div class="imageContainer">
+			<img src="images/writing/book1.png" alt="America’s Emerging Literary Fiction Writers: Minnesota and Wisconsin cover">
 		</div>
-		<div class="bookImages">
-			<a href="https://bit.ly/3eQucbs" target="_blank"><img src="images/writing/book3.png" alt="Minnesota's Best Emerging Poets 2019: An Anthology">
-			<div class="sneakPeek"><span>Nightmare</span><br><br>Silence.</div></a>
+	</section>
+	<section class="bookSection">
+		<div class="imageContainer">
+			<img src="images/writing/book2.png" alt="America's Emerging Suspense Writers: Midwest Region cover">
 		</div>
-		<div class="bookImages">
-			<a href="https://bit.ly/2Gnhd5T" target="_blank"><img src="images/writing/book4.png" alt="Minnesota's Emerging Writers: An Anthology of Fiction">
-			<div class="sneakPeek"><span>The Icarus Problem</span><br><br>There are very few things as cathartic as swinging.</div></a>
+		<article class="bookArticle">
+			<h2 class="articleHeader">Expiration Date</h2>
+			<p>Short Story</p>
+			<p>An assassin, a bowl of soup, and a bad waiter.</p>
+			<p>Find it at <a href="https://bit.ly/30AWSRi" target="_blank">Z Publishing</a>.</p>
+		</article>
+	</section>
+	<section class="bookSection">
+		<article class="bookArticle">
+			<h2 class="articleHeader">Nightmare</h2>
+			<p>Poem</p>
+			<p>An experience of a waking nightmare.</p>
+			<p>Find it at <a href="https://bit.ly/3eQucbs" target="_blank">Z Publishing</a>.</p>
+		</article>
+		<div class="imageContainer">
+			<img src="images/writing/book3.png" alt="Minnesota's Best Emerging Poets 2019: An Anthology cover">
 		</div>
-		<div class="bookImages">
-			<a href="https://bit.ly/2OLSA3f" target="_blank"><img src="images/writing/book5.png" alt="Motif 2013">
-			<div class="sneakPeek"><span>Passing By</span><br><br>A withered painting hangs outside a room,</div></a>
+	</section>
+	<section class="bookSection">
+		<div class="imageContainer">
+			<img src="images/writing/book4.png" alt="Minnesota's Emerging Writers: An Anthology of Fiction cover">
 		</div>
-	</div>
-	<aside>
-		<h2>Contact Me</h2>
-		<a href="mailto:jennihinck@gmail.com?subject=Inquiry" aria-label="Email" target="_blank"><i class="far fa-envelope"></i></a>
-		<a href="https://www.linkedin.com/in/jenni-hinck/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-		<a href="https://www.upwork.com/freelancers/~01eeb9c2c8c7778eb7" aria-label="UpWork" target="_blank" ><i class="fab fa-linkedin" style="visibility: hidden;"><div id="upWorkBackground"></div></i></a>
-		<a href="https://twitter.com/jenninthebets" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-	</aside>
+		<article class="bookArticle">
+			<h2 class="articleHeader">The Icarus Problem</h2>
+			<p>Short Story</p>
+			<p>A girl swings too close to the sun.</p>
+			<p>Find it at <a href="https://bit.ly/2Gnhd5T" target="_blank">Z Publishing</a>.</p>
+			<div class="contentWarning"> Content Warning: Deals with self-harm, depression, and suicide.</div>
+		</article>
+	</section>
+	<section class="bookSection">
+		<article class="bookArticle">
+			<h2 class="articleHeader">Saturday's at Grandma's</h2>
+			<p>Poem</p>
+			<p>Memories, loss, and leaving.</p>
+			<p><a href="https://www.cuchicago.edu/academics/colleges/college-of-arts-sciences/english-department/motif/" target="_blank">Motif</a> Volume 36 (2014).</p>
+		</article>
+		<div class="imageContainer">
+			<img src="images/writing/book5.jpg" alt="Motif Volume 35 cover">
+		</div>
+	</section>
+	<section class="bookSection">
+		<div class="imageContainer">
+			<img src="images/writing/book5.jpg" alt="Motif Volume 35 cover">
+		</div>
+		<article class="bookArticle">
+			<h2 class="articleHeader">The Removal of Wisdom Teeth</h2>
+			<p>Poem</p>
+			<p>Getting you wisdom teeth removed.</p>
+			<p><a href="https://www.cuchicago.edu/academics/colleges/college-of-arts-sciences/english-department/motif/" target="_blank">Motif</a> Volume 36 (2014).</p>
+		</article>
+	</section>	
+	<section class="bookSection">
+		<article class="bookArticle">
+			<h2 class="articleHeader">Passing By</h2>
+			<p>Poem</p>
+			<p>A sonnet about a painting.</p>
+			<p><a href="https://www.cuchicago.edu/academics/colleges/college-of-arts-sciences/english-department/motif/" target="_blank">Motif</a> Volume 35 (2013).</p>
+		</article>
+		<div class="imageContainer">
+			<img src="images/writing/book6.png" alt="Motif Volume 35 cover">
+		</div>
+	</section>
+	<section class="bookSection">
+		<div class="imageContainer">
+			<img src="images/writing/book7.jpg" alt="Motif Volume 35 cover">
+		</div>
+		<article class="bookArticle">
+			<h2 class="articleHeader">Countdown</h2>
+			<p>Short Story</p>
+			<p>A rush to find last words.</p>
+			<p>Originally published in <a href="https://www.cuchicago.edu/academics/colleges/college-of-arts-sciences/english-department/motif/" target="_blank">Motif</a> Volume 34 (2012).</p>
+		</article>
+	</section>	
+	<section class="bookSection">
+		<article class="bookArticle">
+			<h2 class="articleHeader">The Mirror</h2>
+			<p>Poem</p>
+			<p>A broken mirror and a broken soul.</p>
+			<p>Originally published in <a href="https://www.cuchicago.edu/academics/colleges/college-of-arts-sciences/english-department/motif/" target="_blank">Motif</a> Volume 34 (2012).</p>
+		</article>
+		<div class="imageContainer">
+			<img src="images/writing/book7.jpg" alt="Motif Volume 35 cover">
+		</div>
+	</section>	
 	<footer>
+		<div id="footerSocial">
+			<a href="mailto:jennihinck@gmail.com?subject=Inquiry" aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+			<a href="https://www.linkedin.com/in/jenni-hinck/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.upwork.com/freelancers/~01eeb9c2c8c7778eb7" aria-label="UpWork" target="_blank" ><div class="upWorkBackground"></div></a>
+			<a href="https://twitter.com/jenninthebets" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+		</div>
 		<nav>
 			<a href="index.html">Home</a>&nbsp;|&nbsp;
 			<a href="aboutMe.html">About</a>&nbsp;|&nbsp;
 			<a href="writing.html">Writing</a>&nbsp;|&nbsp;
 			<a href="webDesign.html">Web Design</a>&nbsp;|&nbsp;
-			<a href="baking.html">Baking</a>
+			<a href="otherThings.html">Other Things</a>
 		</nav>
-		<div>&copy;2020 Jenni Hinck all rights reserved</div> </footer>
+		<div id="copyright">&copy;2020 Jenni Hinck all rights reserved</div>
+	</footer>
 </body>
 </html>

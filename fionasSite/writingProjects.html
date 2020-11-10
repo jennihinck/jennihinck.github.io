@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fiona McTaggart</title>
+	<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/BrowserReset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div id="mainContainer">
+		<div id="headerContainer">
+			<img src="images/headerBackgroundMobileblur.jpg" alt="mountains" id="headerBackgroundMobile">
+			<img src="images/headerBackgroundDesktopblur.jpg" alt="mountains" id="headerBackgroundDesktop">
+			<header>
+				<h1><a href="index.html">Fiona<br>McTaggart</a></h1>
+				<a href="javascript:void(0);" id="menuIcon" onclick="dropdownMenu()" aria-label="Menu"><i class="fas fa-bars"></i></a>
+				<nav id="navMenu">
+					<section>
+						<h2><a href="aboutMe.html">About</a></h2>
+					</section>	
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="writingProjects.html">Writing Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu activeSub"><a href="writingProjects.html#otherChildren">The Other Children</a></li>
+							<li class="subMenu activeSub"><a href="writingProjects.html#pricking">The Pricking &amp; The Rose</a></li>
+						</ul>	
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')">
+						<h2><a href="otherWriting.html">Other Writing</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="otherWriting.html#muggleNet">MuggleNet</a></li>
+							<li class="subMenu"><a href="otherWriting.html#bookReviews">Book Reviews</a></li>
+						</ul>
+					</section>
+					<section onmouseover="dropdownSubMenu(this,'open')" onmouseout="dropdownSubMenu(this, 'close')"> 
+						<h2><a href="otherProjects.html">Other Projects</a></h2>
+						<ul class="menu">
+							<li class="subMenu"><a href="otherProjects.html#sourdoughnuts">Sourdoughnuts</a></li>
+							<li class="subMenu"><a href="otherProjects.html#mountainRangeRepro">Mountain Range Repro</a></li>	
+							<li class="subMenu"><a href="otherProjects.html#sweeties">The Sweeties</a></li>
+						</ul>
+					</section>
+				</nav>
+				<div id="socialLinks">
+					<a href="https://twitter.com/FionaLMcTaggart" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/fiona.mctaggart/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+			</header>
+		</div>
+		<section class="articleSection" id="otherChildren">
+			<article>
+				<h2>The Other Children</h2>
+				<p>Eleven-year-old Charlotte would do anything for her older sister, Harriet. But not long after they move to a new town, Harriet doesn’t show up for her clarinet lesson and can’t be found anywhere. It’s now that Charlotte starts getting horrible visions—Harriet screaming from under the ice, Harriet getting sucked down the drain—that she thinks are proof that her sister has not only been taken from their town, but from their world entirely.</p>
+				<p>Determined to find out what happened, Charlotte sneaks out in the middle of the night to the fantastical world of Byrne, where the citizens are slowly being crushed by the ruling tyrant, Metod. It’s here she discovers that Harriet wasn’t just kidnapped but has been chosen as one of the Other Children—a series of children whose lives are sucked out of their skins so Metod can live for eternity. Now, with only a few days to do it, Charlotte must find a way to stop Metod and free the people of Byrne before Harriet is not only lost, but dead.</p>
+			</article>
+			<img src="images/otherChildren.jpg" class="sectionPic" alt="island in a lake">
+		</section>
+		<section class="articleSection" id="pricking">
+			<article>
+				<h2>The Pricking &amp; the Rose</h2>
+				<p>When Plum Sheepstock is sent to live with her dead mother's estranged aunt, she discovers that her aunt not only wants to give Plum a glamourous upbringing, she wants Plum to inherit her magical powers--but there's more to this inheritance than Plum's aunt is letting on, and if she accepts it could cost Plum her friends, her family, and herself.</p>
+			</article>
+			<img src="images/pricking.jpg" class="sectionPic" alt="book with a plant growing out of it">
+		</section>
+	</div>	
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>&nbsp;|&nbsp;<a href="aboutMe.html">About</a>&nbsp;|&nbsp;<a href="writingProjects.html">Writing Projects</a>&nbsp;|&nbsp;<a href="otherWriting.html">Other Writing</a>&nbsp;|&nbsp;<a href="otherProjects.html">Other Projects</a>
+		</nav>
+		<div>
+			<span>&copy; 2020 Fiona McTaggart, All Rights Reserved</span>
+			<span><a href="https://jennihinck.com/" target="_blank">Website designed by Jenni Hinck</a></span>
+		</div> 
+	</footer>
+</body>
+</html>
