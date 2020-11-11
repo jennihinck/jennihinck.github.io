@@ -505,21 +505,22 @@ footer nav a:hover {
 		display: inline-block;
 		top: 50%;
 		transform: translateY(-50%);
-		width: 70%;
+		width: 60%;
 		background-color: transparent;
 	}
 
 	#navMenu a {
 		display: inline-block;
-		font-size: 2.75vw;
+		font-size: 2vw;
 		padding: 0% 2%;
 		text-shadow: -.5px .5px 0 #000000, .5px .5px 0 #000000, .5px -.5px 0 #000000, -.5px -.5px 0 #000000;
 	}
 
 	#navMenu a:hover {
-		font-size: 3.25vw;
+		font-size: 2.5vw;
 		border-bottom: 1px solid;
 	}
+
 	/*HEADER END*/
 
 
