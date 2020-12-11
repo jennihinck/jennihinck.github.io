@@ -482,10 +482,10 @@ footer img {
 
 	body {
 		text-align: left;
-		background-image: linear-gradient(to right, #420c07 13%, #b9b9b9 20%);
-		background-image: -webkit-linear-gradient(to right, #420c07 13%, #b9b9b9 20%);
-		background-image: -moz-linear-gradient(to right, #420c07 13%, #b9b9b9 20%);
-		background-image: -o-linear-gradient(to right, #420c07 13%, #b9b9b9 20%);
+		background-image: linear-gradient(to right, #420c07 13vw, #b9b9b9 20vw);
+		background-image: -webkit-linear-gradient(to right, #420c07 13vw, #b9b9b9 20vw);
+		background-image: -moz-linear-gradient(to right, #420c07 13vw, #b9b9b9 20vw);
+		background-image: -o-linear-gradient(to right, #420c07 13vw, #b9b9b9 20vw);
 	}
 
 	header {
