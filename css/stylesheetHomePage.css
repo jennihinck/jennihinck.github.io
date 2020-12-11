@@ -1,373 +1,72 @@
+@font-face {
+	font-family: AndaleMono;
+	src: url(andale_mono.ttf);
+}
+
+@font-face {
+	font-family: Gabriola;
+	src: url(gabriola.ttf);
+}
+
 body {
 	margin: 0;
-	font-family: "Book Antiqua", serif;
+	font-family: AndaleMono, serif;
 	background-color:  #000000;
 	text-align: center;
 	position: relative;
-	background-image: url("../images/mainBackground.jpg");
-	background-repeat: repeat;
-	background-size: 100%;
+	min-height: 100vh;
+	background-image: url("../images/MinneapolisLanding.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
 	background-attachment: fixed;
 }
 
-/*HEADER START*/
-header {
-	position: fixed;
-	top: 0;
-	z-index: 10;
-}
-
-#headerBackgroundDesktop {
+div {
 	display: block;
+	position: absolute;
 	width: 100%;
+	top: 40%;
 }
 
-#arrowLogo {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 2%;
-	width: 30%;
-}
-
-#navMenu {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 60%;
-	z-index: 9;
-	text-align: center;
-	background-color: #000000;
-	transform: translateY(-50%);
-	background-color: transparent;
-}
-
-#navMenu a {
-	display: inline-block;
-	color: #d6d5c9d9;
-	text-decoration: none;
-	padding: 0% 2%;
-	margin: 1%;
-	font-family: "Book Antiqua", serif;
-	font-size: 2vw;
-	text-shadow: -.5px .5px 0 #000000, .5px .5px 0 #000000, .5px -.5px 0 #000000, -.5px -.5px 0 #000000;
-	transition: all 1s;
-}
-
-#navMenu a:hover {
-	font-size: 2.5vw;
-	color: #FFFFFF;
-	border-bottom: 1px solid;
-}
-
-/*HEADER END*/
-
-/*#arrowLogoSlide {
-	width: 50%;
-}*/
-
-/*SLIDESHOW START*/
-.slideshow-container {
+h1 {
 	position: relative;
-	margin-top: 10%;
-	overflow: hidden;
-}
-
-/*Slides/sliding animation*/
-.slideshow-container img {
-	width: 100%;
-	height: 100%;
-}
-
-#slideBackground {
-	position: relative;
-	z-index: -1;
-}
-
-.mySlides {
-	position: absolute;
-	right: -100vw;
-}
-
-#slide-1 {
-	right: 0;
-}
-
-@keyframes slideInLeft {
-	from {right: -100vw}
-	to {right: 0vw}
-}
-
-@keyframes slideOutLeft {
-	from {right: 0vw}
-	to {right: 100vw}
-}
-
-@keyframes slideInRight {
-	from {right: 100vw}
-	to {right: 0vw}
-}
-
-@keyframes slideOutRight {
-	from {right: 0vw}
-	to {right: -100vw}
-}
-
-/*previous/next buttons*/
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
-	margin: 0 1%;
-	padding: 2%;
-	color: #b9b9b9;
-	font-weight: bold;
-	font-size: 4vw;
-	transition: 0.6s ease;
-	user-select: none;
-	z-index: 9;
-}
-
-.next {
-	left: auto;
-	right: 0;
-}
-
-.prev:hover, .next:hover {
-	color: #FFFFFF;
-	font-size: 5vw;
-}
-
-/*dots*/
-.dotContainer {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 30%;
-	transform: translateX(-50%);
-	text-align: center;
-	user-select: none;
-}
-
-.dot {
-	height: 2vw;
-	width: 2vw;
-	padding: 3%;
-	background-color: #b9b9b9;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-	cursor: pointer;
-}
-
-.dot:first-of-type {
-	background-color: #000000;
-}
-
-/*text*/
-#slideText {
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	color: #FFFFFF;
-	z-index: 9;
-}
-
-#slideText h1 {
-	font-size: 6vw;
-	margin: 1%;
-	text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
-}
-
-#slideText > a {
-	text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
-	font-size: 3vw;
-}
-
-#slideText a {
-	text-decoration: none;
-	color: #b9b9b9;
-	transition: color 1s;
-}
-
-#slideText a:hover {
-	color: #FFFFFF;
-}
-/*SLIDESHOWEND*/
-
-
-/*SECTIONS START*/
-section {
-	margin: 2% 0;
+	width: 80%;
+	left: 10%;
 	margin-bottom: 2%;
-	position: relative;
-	color: #000000;
-	transition: all 1.5s ease;
-	font-size: 8vw;
-	font-weight: bold;
 }
 
-section h2 {
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 1;
-}
-
-section:hover {
-	font-size: 9vw;
-	color: #b9b9b9;
-	text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
-	font-weight: normal;
-}
-
-section img {
-	width: 100%;
+a {
 	display: block;
-	opacity: 1;
-	transition: opacity 1.5s ease;
-}
-
-section:hover img {
-	opacity: .9;
-}
-/*SECTIONS END*/
-
-/*FOOTER START*/
-footer {
-	position: relative;
-	background-image: url("../images/footerBackground.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	margin: 4% 0 0 0;
-}
-
-#footerSocial {
 	width: 100%;
-	padding: 2% 0;
-	margin: 2% 0;
 }
 
-#footerSocial a {
-	display: inline-block;
-	margin: 0% 5%;
-	font-size: 8vw;
-	transition: all 1s ease;
-	opacity: .7;
+img {
+	display: block;
+	width: 100%;
 }
 
-.fa-twitter {
-	color: #1DA1F2;
-}
-
-.fa-linkedin {
-	color: #0072b1;
-}
-
-.fa-envelope {
-	color: #D44638;
-}
-
-.upWorkBackground {
-	width: 7vw;
-	height: 7vw;
-	visibility: visible;
-	background-color: #32cd32;
-	background-image: url("../images/upWorkWhite.png");
-	background-size: contain;
-	border-radius: 5%;
-	transition: all 1s ease;
-}
-
-#footerSocial a:hover {
-	font-size: 10vw;
-}
-
-.upWorkBackground:hover {
-	width: 10vw;
-	height: 10vw;
-}
-
-footer nav {
-	margin: 2% 0;
-	padding: 2% 0;
-}
-
-footer nav a {
-	font-size: 3.5vw;
-	text-decoration: none;
+h2{
 	color: #b9b9b9;
+	font-family: Gabriola, cursive;
+	font-size: 6vw;
+	text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
+	padding: 0 .25vw;
+	letter-spacing: 3px;
 }
-
-footer nav a:hover {
-	text-decoration: underline;
-}
-
-#copyright {
-	font-size: 3vw;
-	color: #b9b9b9;
-	padding: 2% 0;
-}
-/*FOOTER END*/
 
 
 /*DESKTOP VIEW START*/
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
 
-	section {
-		width: 45%;
-		margin: 2%;
-		display: inline-block;
-		font-size: 4vw;
+	h1 {
+		width: 50%;
+		left: 25%;
+		margin-bottom: 1%;
 	}
 
-	section:hover {
-		font-size: 5vw;
+	h2 span {
+		font-size: 3.5vw;
 	}
-
-	/*FOOTER START*/
-	#footerSocial {
-		margin: 1% 0;
-		padding: 2% 0% 1% 0%;
-	}
-
-	#footerSocial a {
-		font-size: 3vw;
-		margin: 0 3%;
-	}
-
-	.upWorkBackground {
-		width: 2.5vw;
-		height: 2.5vw;
-	}
-
-	#footerSocial a:hover {
-		font-size: 4vw;
-	}
-
-	.upWorkBackground:hover {
-		width: 3.5vw;
-		height: 3.5vw;
-	}
-
-	footer nav {
-		margin: 0;
-		padding: 0;
-	}
-
-	footer nav a {
-		font-size: 1.75vw;
-	}
-
-	#copyright {
-		font-size: 1.25vw;
-		padding: 2% 0 1% 0;
-	}
-	/*FOOTER END*/
 }
 /*DESKTOP VIEW END*/
