@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jenni Hinck</title>
+	<meta name="description" content="Official website of Jenni Hinck">
+	<link rel="stylesheet" type="text/css" href="css/browserreset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="https://kit.fontawesome.com/e90fa4ffca.js" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+	<!-- preload images -->
+	<link rel="preload" href="images/arrowLogoBlack.png" as="image">
+	<link rel="preload" href="css/gabriola.ttf" as="font">
+</head>
+<body onresize="menuCheck()">	
+	<header>
+		<a href="index.html"><img src="images/arrowLogoBlack.png" id="arrowLogo" alt="Jenni Hinck Logo"></a>
+		<nav id="navMenu">
+			<div id="mainMenu">
+				<a id="writingMenu" class="menuItem active" href="#writing" onclick="subMenus(this,'writingSubMenu');contentSwitch('writing');"><span>Wri</span>ting</a>
+				<a id="designMenu" class="menuItem" href="#design" onclick="subMenus(this,'designSubMenu');contentSwitch('design');"><span>Des</span>ign</a>
+				<a id="aboutMenu" class="menuItem" href="#about" onclick="subMenus(this,'none');contentSwitch('about');"><span>Abo</span>ut</a>
+			</div>
+			<div id="subMenu">
+				<div id="writingSubMenu">
+					<a href="#shortStories" class="subMenuItem active">Short Stories</a>
+					<a href="#poetry" class="subMenuItem active">Poetry</a>
+					<a href="#plays" class="subMenuItem active">Plays</a>
+				</div>
+				<div id="designSubMenu">
+					<a href="#graphicDesign" class="subMenuItem">Graphic Design</a>
+					<a href="#webDesign" class="subMenuItem">Web Design</a>
+				</div>
+			</div>
+		</nav>	
+	</header>
+	<main>
+		<div id="about" class="mainSection">
+			<h1>About</h1>
+			<section>
+				<p>I am one of the rare Minnesotan’s who actually like the cold and snow. I enjoy taking in stories in all forms—books, comics, movies, TV shows, musicals, video games, podcasts, etc. As long as it’s good storytelling, I’m in. I also enjoy collecting and playing instruments (with varying degrees of success), crocheting (slowly), and cross stitching (very slowly).</p>
+				<p>I studied theatre and creative writing at Concordia university Chicago, graduating magna cum laude with a B.A. in Theatre in 2013. I’ve also studied web design at the University of Michigan and the University of London, as well as graphic design at the University of Colorado Boulder, all via Coursera.</p>
+				<p>I am currently working on expanding design portfolio, my published writing, as well as my collection of swords.</p>
+			</section>
+			<img src="images/headshot.jpg" alt="Jenni Hinck">
+		</div>
+
+		<div id="writing" class="mainSection active">
+			<h1>Writing</h1>
+			<section id="shortStories">
+				<h2>Short Stories</h2>
+				<article class="writingArticle">
+					<div class="articleContents">
+						<h3 class="pieceTitle">Three Forty-Three PM</h3>
+						<p class="blurb">A man, a bird, a dilemma.</p>
+						<p class="linkTo">Find it at <a href="https://bit.ly/2Swnej9" target="_blank">Z Publishing</a>.</p>
+					</div>
+					<img src="images/covers/LiteraryBook.png" alt="America's Emerging Literary Fiction Writers: Minnesota and Wisconsin Book Cover">
+				</article>
+				<article class="writingArticle">
+					<img src="images/covers/SuspenseBook.png" alt="America's Emerging Suspense Writers: Midwest Region Book Cover">
+					<div class="articleContents">
+						<h3 class="pieceTitle">Expiration Date</h3>
+						<p class="blurb">An assassin, a bowl of soup, and a bad waiter.</p>
+						<p class="linkTo">Find it at <a href="https://bit.ly/30AWSRi" target="_blank">Z Publishing</a>.</p>
+					</div>
+				</article>
+				<article class="writingArticle">
+					<div class="articleContents">
+						<h3 class="pieceTitle">The Icarus Problem</h3>
+						<p class="blurb">A girl swings too close to the sun.</p>
+						<p class="linkTo">Find it at <a href="https://bit.ly/2Gnhd5T" target="_blank">Z Publishing</a>.</p>
+						<span class="contentWarning">Content Warning: Deals with self-harm, depression, and suicide.</span>
+					</div>
+					<img src="images/covers/writersBook.png" alt="Minnesota's Emerging Writers Book Cover">
+				</article>
+				<article class="writingArticle">
+					<img src="images/covers/Motif2012Book.png" alt="Motif 2012 Book Cover">
+					<div class="articleContents">
+						<h3 class="pieceTitle">Countdown</h3>
+						<p class="blurb">A rush to find last words.</p>
+						<p class="linkTo">Originally published in Motif Volume 34.<br><a onclick="popUpMenus('countdown','open')">Click here to read</a>.</p>
+					</div>
+					<div id="countdown" class="popUp">
+						<i class="fas fa-times" onclick="popUpMenus('countdown','close')"></i>
+						<h1>Countdown</h1> 
+							<p>
+								Factor in the increased pulse, carry the seven-eighths and that gives me… one minute, give or take a few seconds. The exact number’s not important, especially since I’d lose half the time while computing it, and then I’d have to factor out that time, and by then I’d be dead, and I don’t want to die computing when I would die. But the numbers wont stop flowing.
+							</p>
+							<p>
+								I’m down to forty-seven seconds now. I can’t help but wonder if it was worth it. Of course it was, wasn’t it? What did my life matter anyway? Thirty-four seconds.
+							</p> 
+							<p>
+								Last words. That’s probably what I should be thinking about. They’re all staring at me so expectantly. I can’t disappoint them, but then, what do I care. After all, I’ll be dead. Twenty-two.
+							</p> 
+							<p>
+								I can’t help but think what a beautiful color blood really is. They should dye the whole carpet to match. But then they may move now. They probably will. That’s a shame. Their house is so beautiful. Twelve.
+							</p>
+							<p>
+								Last words, I keep forgetting. I wonder if anyone will even remember them. Should I bother? I should probably say something comforting, encouraging, forgiving…
+							</p>
+							<p>
+								“One.”
+							</p>
+					</div>
+				</article>
+			</section>
+			<section id="poetry">
+				<h2>Poetry</h2>
+				<article class="writingArticle">
+					<div class="articleContents">
+						<h3 class="pieceTitle">Nightmare</h3>
+						<p class="blurb">An experience of a waking nightmare.</p>
+						<p class="linkTo">Find it at <a href="https://bit.ly/3eQucbs" target="_blank">Z Publishing</a>.</p>
+					</div>
+					<img src="images/covers/PoetsBook.png" alt="Minnesota's Best Emerging Poets 2019 Book Cover">
+				</article>
+				<article class="writingArticle">
+					<img src="images/covers/Motif2014Book.png" alt="Motif Volume 36 Book Cover">
+					<div class="articleContents">
+						<h3 class="pieceTitle">Saturday's at Grandma's</h3>
+						<p class="blurb">Memories, loss, and leaving.</p>
+						<p class="linkTo">Originally published in Motif Volume 36.<br><a onclick="popUpMenus('saturdaysAtGrandmas','open')">Click here to read</a>.</p>
+					</div>
+					<div id="saturdaysAtGrandmas" class="popUp">
+						<i class="fas fa-times" onclick="popUpMenus('saturdaysAtGrandmas','close')"></i>
+						<h1>Saturdays at Grandma’s</h1> 
+							<p>
+								Bubble blowing, <br>
+								cartoon viewing,<br>
+								puzzles on the floor;<br>
+								boxes turned <br>
+								to rocket ships,<br>
+								crazy eights and war.<br>
+								<br>
+								Sorting records,<br>
+								packing boxes,<br>
+								furniture’s no good;<br>
+								homes turned back <br>
+								to houses:<br>
+								empty shells of wood. 
+							</p>
+					</div>
+				</article>
+				<article class="writingArticle">
+					<div class="articleContents">
+						<h3 class="pieceTitle">The Removal of Wisdom Teeth</h3>
+						<p class="blurb">Getting you wisdom teeth removed.</p>
+						<p class="linkTo">Originally published in Motif Volume 36.<br><a onclick="popUpMenus('wisdomTeeth','open')">Click here to read</a>.</p>
+					</div>
+					<img src="images/covers/Motif2014Book.png" alt="Motif Volume 36 Book Cover">
+					<div id="wisdomTeeth" class="popUp">
+						<i class="fas fa-times" onclick="popUpMenus('wisdomTeeth','close')"></i>
+						<h1>The Removal of Wisdom<br><span>Teeth</span><br></h1> 
+							<p>
+								The air hissing toward my nose<br>
+								smells stale<br>
+								Then I remember it’s not air.<br>
+								My arm is pinched<br>
+								and I hear,<br>
+								“The worst is over.”<br>
+								<br>
+								It’s not until I wake<br>
+								that I sense the lie<br>
+								through swollen jaw<br>
+								and bleeding gums.<br>
+								<br>
+								I am now confined <br>
+								to soft serve<br>
+								dribbling down<br>
+								numb chin <br>
+								and soup slipping<br>
+								past swollen lips. 
+							</p>
+					</div>
+				</article>
+				<article class="writingArticle">
+					<img src="images/covers/Motif2013Book.png" alt="Motif Volume 35 Book Cover">
+					<div class="articleContents">
+						<h3 class="pieceTitle">Passing By</h3>
+						<p class="blurb">A sonnet about a painting.</p>
+						<p class="linkTo">Originally published in Motif Volume 35.<br><a onclick="popUpMenus('passingBy','open')">Click here to read</a>.</p>
+					</div>
+					<div id="passingBy" class="popUp">
+						<i class="fas fa-times" onclick="popUpMenus('passingBy','close')"></i>
+						<h1>Passing By</h1> 
+							<p>
+								A withered painting hangs outside a room,<br>
+								It goes unnoticed by all but a few.<br>
+								Some pause in their stride, then quickly resume,<br>
+								But a few, just a few, pursue<br>
+								The beauty within the withered painting.<br>
+								<br>
+								The frame in cracked and the wood is in rot,<br> 
+								But it seems like it is merely feigning<br>
+								And up-playing its decrepit lot,<br>
+								So when a traveler does catch its eye,<br>
+								And stops to look with awe upon the piece<br>
+								Instead of merely continuing by,<br>
+								It is then the beauty does increase.<br>
+								For the admiration of only one<br>
+								Makes all the others into none. <br>
+							</p>
+					</div>
+				</article>
+				<article class="writingArticle">
+					<div class="articleContents">
+						<h3 class="pieceTitle">The Mirror</h3>
+						<p class="blurb">A broken mirror and a broken soul.</p>
+						<p class="linkTo">Originally published in Motif Volume 34.<br><a onclick="popUpMenus('mirror','open')">Click here to read</a>.</p>
+					</div>
+					<img src="images/covers/Motif2012Book.png" alt="Motif Volume 34 Book Cover">
+					<div id="mirror" class="popUp">
+						<i class="fas fa-times" onclick="popUpMenus('mirror','close')"></i>
+						<h1>The Mirror</h1> 
+							<p>
+								Seven years bad luck,<br>
+								that’s what’s to be feared.<br>
+								but I’ve had seventeen already<br>
+								so what’s a few years more?<br>
+								I look in the broken mirror,<br>
+								triumphant in a victory <br>
+								I haven’t really won.<br>
+								a thousand tiny faces<br>
+								stare back into my soul,<br>
+								with no one else to torment,<br>
+								and nowhere else to go.<br>
+								they seize my every heartbeat,<br>
+								and capture every breath,<br>
+								till the battle’s finally over<br>
+								and my soul’s finally at rest.<br>
+							</p>
+					</div>
+				</article>
+			</section>
+			<section id="plays">
+				<h2>Plays</h2>
+				<article class="writingArticle">
+					<div class="articleContents">
+						<h3 class="pieceTitle">The Haberdashery of Thaddeus Pellegrin</h3>
+						<p class="blurb">An unusual haberdashery full of secrets.</p>
+						<p class="linkTo">Winner of the 2012 New Play Festival at Concordia University Chicago<br><!-- <a href="">Click here to read</a>. --></p>
+					</div>
+					<img src="images/covers/haberdash.png" alt="The Haberdashery of Thaddeus Pellegrin Poster">
+				</article>
+			</section>
+		</div>
+
+		<div id="design" class="mainSection">
+			<h1>Design</h1>
+			<section id="graphicDesign">
+				<h2>Graphic Design</h2>
+				<article class="designArticle">
+					<img src="images/bookmark.png" alt="bookmark">
+					<div class="designInfo">
+						<i class="fas fa-info-circle" onclick="designInfoClick(this)"></i>
+						<p>Bookmark for <span>The Dancing Realms</span> series by Sharon Hinck<br>
+						Cover art by <a href="http://www.dogeareddesign.com/" target="_blank">Kirk DouPonce</a></p>
+					</div>
+				</article>
+				<article class="designArticle">
+					<img src="images/theatreposter.png" alt="theatre poster">
+					<div class="designInfo">
+						<i class="fas fa-info-circle" onclick="designInfoClick(this)"></i>
+						<p>Mock-up poster for a theatre</p>
+					</div>
+				</article>
+			</section>
+			<section id="webDesign">
+				<h2>Web Design</h2>
+				<article class="designArticle">
+					<div class="designInfo">
+						<i class="fas fa-info-circle" onclick="designInfoClick(this)"></i>
+						<p>Website for writer, musician, baker, and seamstress Fiona McTaggart<br>
+						<span class="contentWarning">*Not currently hosted by client</span></p>
+					</div>
+					<div class="imageContainer" id="responsiveContainer">
+						<div class="iframeContainer">
+							<div class="desktop">
+								<img src="images/screens/desktop.png" alt="iMac">
+								<div id="desktopiframe">
+									<iframe src="fionasSite/index.html"></iframe>
+								</div>
+							</div>
+							<div class="tablet">
+								<img src="images/screens/ipad.png" alt="iPad">
+								<div id="tabletiframe">
+									<iframe src="fionasSite/otherProjects.html"></iframe>
+								</div>
+							</div>
+							<div class="mobile">
+								<img src="images/screens/iphone.png" alt="iPhone">
+								<div id="mobileiframe">
+									<iframe src="fionasSite/index.html"></iframe>
+								</div>
+							</div>
+							<div class="laptop">
+								<img src="images/screens/laptop.png" alt="MacBook">
+								<div id="laptopiframe">
+									<iframe src="fionasSite/otherProjects.html"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+		</div>
+	</main>
+	<aside id="socialLinks">
+		<a href="mailto:jennihinck@gmail.com?subject=Inquiry" aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+		<a href="https://www.linkedin.com/in/jenni-hinck/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+		<a href="https://www.upwork.com/freelancers/~01eeb9c2c8c7778eb7" aria-label="UpWork" target="_blank" ><div class="upWorkBackground"></div></a>
+		<a href="https://twitter.com/jenninthebets" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+	</aside>
+	<footer>
+		<img src="images/MinneapolisMain.png" alt="Minneapolis Skyline">
+		<div id="copyright">&copy;2020 Jenni Hinck<br>all rights reserved</div>
+	</footer>
+</body>
+</html>
