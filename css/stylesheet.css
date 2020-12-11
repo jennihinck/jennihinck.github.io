@@ -1,4 +1,4 @@
-Setting fonts*/
+/*Setting fonts*/
 @font-face {
 	font-family: AndaleMono;
 	src: url(andale_mono.ttf);
@@ -454,7 +454,7 @@ header {
 footer {
 	background-image: linear-gradient(#b9b9b9, #420c07);
 	background-image: -webkit-linear-gradient(#b9b9b9, #420c07);
-	background-image: -moz-linear-gradient(#b9b9b9, #420c07));
+	background-image: -moz-linear-gradient(#b9b9b9, #420c07);
 	background-image: -o-linear-gradient(#b9b9b9, #420c07);
 }
 
@@ -738,4 +738,4 @@ footer img {
 
 	
 }
-/*DESKTOP VIEW END
+/*DESKTOP VIEW END*/
