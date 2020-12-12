@@ -48,14 +48,14 @@ header {
 	font-family: Gabriola, cursive;
 	font-size: 7vw;
 	letter-spacing: 2px;
-	color: #000000;
+	color: #b9b9b9;
 	transition: color 1s ease-in;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .menuItem:hover {
-	color: #b9b9b9;
+	color: #5d5d5d;
 }
 
 .menuItem.active {
@@ -417,6 +417,7 @@ header {
 	width: 100%;
 	padding: 2% 0;
 	margin: 2% 0;
+	z-index: 9;
 }
 
 #socialLinks a {
@@ -741,6 +742,7 @@ footer img {
 		bottom: -10%;
 	}
 
+	
 }
 
 @media screen and (max-height: 500px) {
@@ -790,4 +792,6 @@ footer img {
 	}
 
 }
+
+
 /*DESKTOP VIEW END*/
