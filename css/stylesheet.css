@@ -736,6 +736,53 @@ footer img {
 		bottom: -10%;
 	}
 
-	
+}
+
+@media screen and (max-height: 500px) {
+
+	#socialLinks {
+		top: 50%;
+	}
+
+}
+
+@media screen and (max-height: 450px) {
+
+	#socialLinks {
+		top: 55%;
+	}
+
+}
+
+@media screen and (max-height: 400px) {
+
+	#socialLinks {
+		top: 60%;
+	}
+
+}
+
+@media screen and (max-height: 350px) {
+
+	#socialLinks {
+		top: 70%;
+	}
+
+}
+
+@media screen and (max-height: 300px) {
+
+	#socialLinks {
+		top: 80%;
+	}
+
+}
+
+@media screen and (max-height: 250px) {
+
+	#socialLinks {
+		top: 90%;
+	}
+
 }
 /*DESKTOP VIEW END*/
