@@ -118,6 +118,11 @@ header {
 	border-radius: 50%;
 }
 
+#about section {
+	padding: 0 5%;
+	text-align: left;
+}
+
 .mainSection h1 {
 	font-family: Gabriola, cursive;
 	color: #420c07;
